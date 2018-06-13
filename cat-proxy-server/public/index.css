@@ -1,0 +1,23 @@
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.body{
+  margin-top: auto;  
+  display: flex;
+  flex-direction: row;
+}
+
+.bodybody{
+  display: flex;
+  flex-direction: column;
+}
+
+.top{
+  overflow: hidden;
+}
+
+.bottom{
+  overflow: hidden;
+}
