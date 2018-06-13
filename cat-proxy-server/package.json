@@ -1,0 +1,23 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "AirBnC Proxy Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airBnC/cat-proxy-server.git"
+  },
+  "author": "Cat Ligad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airBnC/cat-proxy-server/issues"
+  },
+  "homepage": "https://github.com/airBnC/cat-proxy-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
