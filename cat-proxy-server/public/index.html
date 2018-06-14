@@ -20,8 +20,22 @@
     </div>
   </div>
 </body>
-  <!-- <script src="http://localhost:3001/app.js"></script> -->
-  <script src="http://localhost:3002/rooms/1/dist/bookingbundle.js"></script>
-  <script src="http://localhost:3003/rooms/1/infobundle.js"></script>
-  <script src="http://localhost:3004/rooms/1/reviewsBundle.js"></script>
+  <script>
+    let id = window.location.pathname;
+    if (id === '/rooms/' || id === '/') {
+      id = 1;
+    } else {
+      id = id.replace(/\/rooms/g, '');
+      id = id.replace(/\//g, '');
+    };
+    let script = document.createElement('script');
+    script.src=`http://localhost:3002/rooms/${id}/dist/bookingbundle.js`;
+    document.body.append(script);
+    script = document.createElement('script');
+    script.src=`http://localhost:3003/rooms/${id}/infobundle.js`;
+    document.body.append(script);
+    script = document.createElement('script');
+    script.src=`http://localhost:3004/rooms/${id}/reviewsBundle.js`;
+    document.body.append(script);
+  </script>
 </html>

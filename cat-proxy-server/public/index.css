@@ -10,8 +10,12 @@ body{
 }
 
 .bodybody{
+  width: 650px;
+  margin-top: 50px;
+  margin-right: 500px;
   display: flex;
   flex-direction: column;
+  order: 1;
 }
 
 .top{
@@ -20,4 +24,12 @@ body{
 
 .bottom{
   overflow: hidden;
+}
+
+.side{
+  width: 400px;
+  position: fixed;
+  margin-left: 700px;
+  margin-top: 50px;
+  order: 2;
 }
