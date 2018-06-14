@@ -23,13 +23,14 @@ app.get('/api/listings/:number/averagestars/', (req, res) => {
   res.redirect(`http://127.0.0.1:3004/api/listings/${number}/averagestars/`);
 });
 
+
 app.get('/api/rooms/:number/general/', (req, res) => {
   const {number} = req.params;
-  res.redirect(`http://127.0.0.1:3003/api/rooms/${number}/general/`);
+  res.redirect(`http://ec2-18-217-35-168.us-east-2.compute.amazonaws.com/api/rooms/${number}/general/`);
 });
 app.get('/api/rooms/:number/amenities/', (req, res) => {
   const {number} = req.params;
-  res.redirect(`http://127.0.0.1:3003/api/rooms/${number}/amenities/`);
+  res.redirect(`http://ec2-18-217-35-168.us-east-2.compute.amazonaws.com/api/rooms/${number}/amenities/`);
 });
 
 

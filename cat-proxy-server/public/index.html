@@ -32,7 +32,7 @@
     script.src=`http://localhost:3002/rooms/${id}/dist/bookingbundle.js`;
     document.body.append(script);
     script = document.createElement('script');
-    script.src=`http://localhost:3003/rooms/${id}/infobundle.js`;
+    script.src=`http://ec2-18-217-35-168.us-east-2.compute.amazonaws.com/rooms/${id}/infobundle.js`;
     document.body.append(script);
     script = document.createElement('script');
     script.src=`http://localhost:3004/rooms/${id}/reviewsBundle.js`;
