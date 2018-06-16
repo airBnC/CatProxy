@@ -11,7 +11,7 @@ app.use('/rooms/:number', express.static(path.join(__dirname, '../public')));
 
 app.get('/api/rooms/:number/bookingInfo/', (req, res) => {
   const {number} = req.params;
-  res.redirect(`http://127.0.0.1:3002/api/rooms/${number}/bookingInfo/`);
+  res.redirect(`http://ec2-34-210-45-213.us-west-2.compute.amazonaws.com/api/rooms/${number}/bookingInfo/`);
 });
 
 app.get('/api/listings/:number/reviews/', (req, res) => {
@@ -32,7 +32,6 @@ app.get('/api/rooms/:number/amenities/', (req, res) => {
   const {number} = req.params;
   res.redirect(`http://ec2-18-217-35-168.us-east-2.compute.amazonaws.com/api/rooms/${number}/amenities/`);
 });
-
 
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
